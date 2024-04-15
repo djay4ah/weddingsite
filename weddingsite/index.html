@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Евгений и Алина</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Календарь занимает довольно много места, поэтому я его поместил в отдельный файл -->
+    <link rel="stylesheet" href="calendar.css">
+</head>
+<body>
+    <div id="flash" class="flash"></div>
+    <div class="wrapper">
+        <img class="leaf" src="https://static.tildacdn.com/tild3265-6638-4265-a332-613538663038/_13xws_1-min_2.png">
+        <section class="mainInfo">
+            <div class="names">
+                <h1>ЕВГЕНИЙ</h1>
+                <h1>&</h1>
+                <h1>АЛИНА</h1>
+            </div>
+            <div class="date">
+                <div class="day">
+                    <h2 style="font-size: 10px;">ВОСКРЕСЕНЬЕ</h1>
+                    <div></div>
+                    <h1 style="font-size: 35px; margin-inline: 10px; letter-spacing: 1px;">7</h1>
+                    <div></div>
+                    <h2>ИЮЛЯ</h1>
+                </div>
+                <h1>2024</h1>
+            </div>
+            <div class="counterSection">
+                <h1 style="font-size: 12px;">ДО СВАДЬБЫ ОСТАЛОСЬ</h1>
+                <div class="counter">
+                    <div class="counterWrap">
+                        <h1 id='daysLabel'>0</h1>
+                        <h2>дней</h2>
+                    </div>
+                    <div class="counterWrap">
+                        <h1 id='hoursLabel'>0</h1>
+                        <h2>часов</h2>
+                    </div>
+                    <div class="counterWrap">
+                        <h1 id='minutesLabel'>0</h1>
+                        <h2>минут</h2>
+                    </div>
+                    <div class="counterWrap">
+                        <h1 id='secondsLabel'>0</h1>
+                        <h2>секунд</h2>
+                    </div>
+                </div>
+            </div>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Arrow-down.svg/1200px-Arrow-down.svg.png" alt="arrowDown">
+        </section>
+        <img id="secondLeaf" class="leafRight" src="https://static.tildacdn.com/tild3265-6638-4265-a332-613538663038/_13xws_1-min_2.png">
+        <!-- <section class="story">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Arrow-down.svg/1200px-Arrow-down.svg.png" alt="arrowDown">
+            <div class="storyContent">
+                <p>ИСТОРИЯ ЛЮБВИ</p>
+                <h1>Лорем ипсум долор сит амет, цонсецтетур адиписцинг елит. Пеллентескьюуе аццумсан рхонцус ест, ет посуере турпис феугиат ин. Нулла дигниссим сем диам, вел сагиттис пурус ултрицес ат. Вестибулум ид велит кьюуис теллустинцидунт орнаре. Пхаселлус волутпат елит лецтус, ат аццумсан аугуе семпер ин. Интегер нон импердиет ех. Маеценас витае ех нон маурис маттисферментум. Нуллам еу диам велит.Пеллентескьюуе вариус урна ут цондиментум волутпат. Фусце пулвинар порта долор сед сагиттис. Пеллентескьюуе рутрум Теллус нон фрингилла моллис. Сед посуере лобортис долор кьюуис ацтор. Нам еу ех еу нунц семпер интердум.
+                </h1>
+            </div>
+        </section> -->
+        <section class="announce">
+            <img id="announceLeaf" class="leafAnnounce" src="https://static.tildacdn.com/tild3265-6638-4265-a332-613538663038/_13xws_1-min_2.png">
+            <div class="inviteSection">
+                <p id="planLeafTrigger">ДОРОГИЕ НАШИ ДРУЗЬЯ И РОДНЫЕ!</p>
+                <h1>Вы получили эту ссылку, а значит, мы спешим сообщить вам важную новость!</h1>
+                <p>МЫ ЖЕНИМСЯ!</p>
+                <h1>И мы очень хотим разделить с вами этот счастливый праздник.</h1>
+                <h1 style="font-weight: 500;">Ждём вас на нашей свадьбе! Начало в 16:00</h1>
+            </div>
+            <div class="calendarRow">
+                <div class="calendarData">
+                    <h1 class="calendarMonth">ИЮЛЬ</h1>
+                    <h1 class="calendarYear">2024</h1>
+                </div>
+                <div class="calendar">
+                    <div class="calendar__date">
+                      <div class="calendar__day">пн</div>
+                      <div class="calendar__day">вт</div>
+                      <div class="calendar__day">ср</div>
+                      <div class="calendar__day">чт</div>
+                      <div class="calendar__day">пт</div>
+                      <div class="calendar__day">сб</div>
+                      <div class="calendar__day">вс</div>
+                      <!-- <div class="calendar__number__blank">28</div> -->
+                      <!-- <div class="calendar__number__blank">29</div> -->
+                      <!-- <div class="calendar__number__blank">30</div> -->
+                      <div class="calendar__number">1</div>
+                      <div class="calendar__number">2</div>
+                      <div class="calendar__number">3</div>
+                      <div class="calendar__number">4</div>
+                      <div class="calendar__number">5</div>
+                      <div class="calendar__number">6</div>
+                      <div class="calendar__number">7 <div id="heart" class="calendar_heart"></div> </div>
+                      <div class="calendar__number">8</div>
+                      <div class="calendar__number">9</div>
+                      <div class="calendar__number">10</div>
+                      <div class="calendar__number">11</div>
+                      <div class="calendar__number">12</div>
+                      <div class="calendar__number">13</div>
+                      <div class="calendar__number">14</div>
+                      <div class="calendar__number">15</div>
+                      <div class="calendar__number">16</div>
+                      <div class="calendar__number">17</div>
+                      <div class="calendar__number">18</div>
+                      <div class="calendar__number">19</div>
+                      <div class="calendar__number">20</div>
+                      <div class="calendar__number">21</div>
+                      <div class="calendar__number">22</div>
+                      <div class="calendar__number">23</div>
+                      <div class="calendar__number">24</div>
+                      <div class="calendar__number">25</div>
+                      <div class="calendar__number">26</div>
+                      <div class="calendar__number">27</div>
+                      <div class="calendar__number">28</div>
+                      <div class="calendar__number">29</div>
+                      <div class="calendar__number">30</div>
+                      </div>
+                      <!-- этот див почему то спасает сайт. -->
+                </div>
+            </div>
+        </section>
+        <img id="planLeaf" class="leafRight" src="https://static.tildacdn.com/tild3265-6638-4265-a332-613538663038/_13xws_1-min_2.png">
+        <section class="plan">
+            <p>ПЛАН МЕРОПРИЯТИЯ</p>
+            <div class="planContainer">
+                <div class="eventsLeft">
+                    <div class="event">
+                        <img src="img/drinks.png" alt="">
+                        <h1>Сбор гостей</h1>
+                        <h1>15:30</h1>
+                    </div>
+                    <div class="event">
+                        <img src="img/plate.png" alt="">
+                        <h1>Банкет</h1>
+                        <h1>17:00</h1>
+                    </div>
+                    <div class="event">
+                        <img src="img/cake.png" alt="">
+                        <h1>Свадебный <br/> торт</h1>
+                        <h1>21:00</h1>
+                    </div>
+                </div>
+                <div class="eventsLines">
+                    <div class="eventsLine"></div>
+                    <div class="eventsPoint"></div>
+                    <div class="eventsLine"></div>
+                    <div class="eventsPoint"></div>
+                    <div class="eventsLine"></div>
+                    <div id="placeLeafTrigger" class="eventsPoint"></div>
+                    <div class="eventsLine"></div>
+                    <div class="eventsPoint"></div>
+                    <div class="eventsLine"></div>
+                    <div class="eventsPoint"></div>
+                    <div class="eventsLine"></div>
+                    <div class="eventsPoint"></div>
+                    <div id="dressLeafTrigger" class="eventsLine"></div>
+                </div>
+                <div class="eventsRight">
+                    <div class="event" style="margin-top: 100px;">
+                        <img id="section-2" src="img/registration.png" alt="">
+                        <h1>Регистрация <br/> бракосочетания</h1>
+                        <h1>16:00</h1>
+                    </div>
+                    <div style="margin-top: -50px;" class="event">
+                        <img src="img/weddingend.png" alt="">
+                        <h1>Первый танец <br/> молодых</h1>
+                        <h1>19:00</h1>
+                    </div>
+                    <div style="margin-top: -50px;" class="event">
+                        <img src="img/drinks.png" alt="">
+                        <h1>Завершение <br/> вечера</h1>
+                        <h1>00:00</h1>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <img id="placeLeaf" class="leafLeft leafFix" src="https://static.tildacdn.com/tild3265-6638-4265-a332-613538663038/_13xws_1-min_2.png">
+        <section class="place">
+            <p>МЕСТО ПРОВЕДЕНИЯ</p>
+            <h1>г.Улан-Удэ, ресторан Voyage, Улица Ранжурова, 11</h1>
+            <iframe class='map' src="https://yandex.ru/map-widget/v1/?um=constructor%3A6a8e1e3cdd619636490b68af45cf4d3704b98d1cc2305bcac4957601225c78d6&amp;source=constructor" width="320" height="240" frameborder="0"></iframe>
+            <button id="detailsLeafTrigger" onclick=" window.open('https\:\/\/clck.ru/3A3Dix')"">Построить маршрут</button>
+            
+        </section>
+        <img id="dressLeaf" class="leafRight" src="https://static.tildacdn.com/tild3265-6638-4265-a332-613538663038/_13xws_1-min_2.png">
+        <section class="dressCode">
+            <p>ДРЕСС-КОД</p>
+            <h1>Для нас главное - ваше присутствие. Но мы будем рады, если в своих нарядах вы поддержите цветовую гамму нашей свадьбы.</h1>
+            <h1 style="font-size: 20px; margin-top: 15px;">ЛЕДИ</h1>
+            <h1>Коктейльное платье или костюм пательных тонов.</h1>
+            <div class="colorsRange">
+                <div style="background-color: #F2F2F2;"></div>
+                <div style="background-color: #D9DDCE;"></div>
+                <div style="background-color: #C6D1C9;"></div>
+                <div style="background-color: #ACBCB2;"></div>
+                <div style="background-color: #869F8A;"></div>
+                <div style="background-color: #f5f5dc;"></div>
+            </div>
+            <h1 style="font-size: 20px;">ДЖЕНТЕЛЬМЕНЫ</h1>
+            <h1>Классический костюм или брюки и белый верх.</h1>
+        </section>
+        <img id="detailsLeaf" class="leafLeft" style="margin-top: -100px;" src="https://static.tildacdn.com/tild3265-6638-4265-a332-613538663038/_13xws_1-min_2.png">
+        <section class="details">
+            <p>ДЕТАЛИ</p>
+            <h1>По любым вопросам вы можете обращаться к нашему организатору</h1>
+            <button>+7 902 562‑34‑97 <br/> Анастасия</button>
+            <p>ХЕШТЕГ</p>
+            <h1>Под фотографиями со свадьбы ставьте хештег:</h1>
+            <button>#Evgeniy_Alina07</button>
+        </section>
+        <img class="leafRight" src="https://static.tildacdn.com/tild3265-6638-4265-a332-613538663038/_13xws_1-min_2.png">
+        <section class="wishes">
+            <p>ПОЖЕЛАНИЯ</p>
+            <h1>Просим вас не дарить цветы - мы не успеем насладиться их красотой до отъезда. <br/> <br/> А вот бутылочке вина для нашей семейной винотеки будем очень рады!</h1>
+            <h1>Ваши подарки в конвертах помогут осуществить наши мечты. <br/> <br/>  </h1>
+            <h1>Будем благодарны если вы воздержитесь от криков «горько» на празднике. <br/> Для нас поцелуй - это выражение чувств, он не может быть по заказу.</h1>
+        </section>
+        <!-- <img style="margin-top: -5vh;" class="leafLeft" src="https://static.tildacdn.com/tild3265-6638-4265-a332-613538663038/_13xws_1-min_2.png"> -->
+        <section class="formSection">
+            <p>ПОЖАЛУЙСТА, ПОДТВЕРДИТЕ СВОЁ ПРИСУТСТВИЕ</p>
+            <form action="https://formsubmit.co/starkovmix@gmail.com" method="POST" class="endForm">
+                <label for="fname" required>Имя</label>
+                <input type="text" id="fname" name="Имя" placeholder="Введите здесь ваше имя">
+                <label for="sname" required>Фамилия</label>
+                <input type="text" id="sname" name="Фамилия" placeholder="Введите здесь вашу фамилию">
+                <label for="appearing">Подтвердите присутствие до 01.06.24</label>
+                <fieldset class="appearing">
+                    <label>
+                        <input value="Явлюсь!" name="Явлюсь ли на праздник" type="radio" id="appearing">
+                        <label for="appearing">Обязательно буду</label>
+                        <br/>
+                        <input value="Не явлюсь" name="Явлюсь ли на праздник" type="radio" id="notappearing">
+                        <label for="appearing">Не смогу явиться</label>
+                    </label> 
+                </fieldset>
+                <label for="friends">С кем вы пойдёте на праздник?</label>
+                <input type="text" id="friends" name="Будет ли с вами кто то?" placeholder="Имя Фамилия">
+                <label for="children">Будут ли с вами дети?</label>
+                <input type="text" id="children" name="Будут ли с вами дети?" placeholder="Да, двое, 7 и 12 лет">
+                <label class="drinks" for="drinks">Уточните ваши предпочтения в алкоголе:
+                    <fieldset class="drinksColumn">
+                        <label>
+                            <input name="Красное вино" type="checkbox" id="redwine">
+                            <label for="redwine">Красное вино</label>
+                        </label> 
+                        <label>
+                            <input name="Белое вино" type="checkbox" id="whitewine">
+                            <label for="whitewine">Белое вино</label>
+                        </label> 
+                        <label>
+                            <input name="Шампанское" type="checkbox" id="champagne">
+                            <label for="champagne">Шампанское</label>
+                        </label> 
+                        <label>
+                            <input name="Водка" type="checkbox" id="vodka">
+                            <label for="vodka">Водка</label>
+                        </label> 
+                        <label>
+                            <input name="Виски" type="checkbox" id="viski">
+                            <label for="viski">Виски</label>
+                        </label>
+                        <label>
+                            <input name="Коньяк" type="checkbox" id="conjak">
+                            <label for="conjak">Коньяк</label>
+                        </label> 
+                        <label>
+                            <input type="checkbox" id="juicy">
+                            <label for="juicy">Без алкоголя</label>
+                        </label> 
+                    </fieldset>
+                </label>
+                <label for="owndrink">Свой вариант</label>
+                <input type="text" id="owndrink" name="owndrink" placeholder="Свой вариант">
+                <input class="submitBtn" type="submit" value="Отправить">
+            </form>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,86 @@
+.calendar {
+    position: relative;
+    width: 300px;
+    box-sizing: border-box;
+    box-shadow: 0 5px 50px rgba(#000, 0.5);
+    border-radius: 8px;
+    overflow:visible;
+    margin-top: -20px;
+  }
+
+  .calendar div {
+    font-family: 'Geologica';
+  }
+
+  .calendarData {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .calendarMonth {
+    color: rgb(141, 108, 23);
+    font-weight: 400;
+  }
+
+  .calendarYear {
+    font-family: 'Geologica';
+    font-weight: 200;
+  }
+  
+  
+  .calendar__date {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25px, 1fr));
+    grid-gap: 10px;
+    box-sizing: border-box;
+  }
+  
+  .calendar__day {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 25px;
+    font-weight: 600;
+    color: #262626;
+    
+  }
+
+  @keyframes heartIn {
+    from {
+      padding: 300px;
+      opacity: 0;
+    }
+    to {
+      padding: 20px;
+      opacity: 1;
+    }
+  }
+
+  .calendar_heart {
+    padding: 20px;
+    margin-top: 0px;
+    position: absolute;
+    background-image: url(https://www.iconpacks.net/icons/2/free-heart-icon-3510-thumb.png);
+    background-size: contain;
+    opacity: 0;
+    /* animation: heartIn 2s forwards linear; */
+
+  }
+  
+  .calendar__number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 25px;
+    color: #262626;
+  }
+
+  .calendar__number__blank {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 25px;
+    color: #26262672;
+  }
